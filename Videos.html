@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+    <title>Great-Looks | Videos</title>
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-theme.min.css" />
+
+</head>
+<body id="Videos" style="  overflow-x: hidden;width: 100%;padding: 0 " >
+<nav class="nav navbar container-fluid menu--tantalid" style="padding: 0;width:auto;height:95px; position: relative; z-index: 200;"  >
+    <div class=" row " style="padding:0;margin: 0;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+
+                <span style="background: black" class="icon-bar"></span>
+                <span style="background: black" class="icon-bar"></span>
+                <span style="background: black" class="icon-bar"></span>
+            </button>
+            <a href="Index.html"><img src="images/greatlookslogo%20(2).png" alt="GreatlooksLogo" class="img-responsive navbar-brand" style="opacity: 0.2;height:130px; width:350px;padding: 0 ;margin:0;" /></a>
+        </div>
+
+        <div class="nav ">
+
+            <ul id="myNavbar" class="nav navbar-nav menu__list collapse navbar-collapse navbar-right " style="margin-top:50px;z-index:999" >
+                <li class="menu__item" >
+                    <a href="Index.html" class="menu__link"> Home</a>
+                </li>
+                <li class="menu__item" >
+                    <a href="Nature.html" class="menu__link">Nature</a>
+                </li>
+                <li class="menu__item">
+                    <a href="Culture.html" class="menu__link">Culture</a>
+                </li>
+                <li class="menu__item">
+                    <a href="Wedding.html" class="menu__link">Wedding</a>
+                </li>
+                <li class="menu__item">
+                    <a href="Fashion.html" class="menu__link">Fashion</a>
+                </li>
+                <li class="menu__item">
+                    <a href="Portrait.html" class="menu__link">Portrait</a>
+                </li>
+                <li class="menu__item ">
+                    <a href="Contact.html" class="menu__link">About US</a>
+                </li>
+                <li class="menu__item menu__item--current">
+                    <a href="Videos.html" class="menu__link">Videos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="row container" style="margin:5px 5px">
+    <div class="header" >
+            <span id="video">
+                <span class="vv animated rotateInUpLeft">V</span>&nbsp;
+                <span class="vi animated rotateInUpLeft">I</span>&nbsp;
+                <span class="vd animated rotateInUpLeft">D</span>&nbsp;
+                <span class="ve animated rotateInUpLeft">E</span>&nbsp;
+                <span class="vo animated rotateInDownRight">O</span>&nbsp;
+
+            </span>
+    </div>
+        <div class="videos">
+
+                <video autoplay loop muted class="video-bg">
+                    <source src="images/blue%20motion%20background.mp4"  type="video/mp4" />
+
+                </video>
+        </div>
+
+        <div class="container-fluid col-lg-offset-3">
+            <video controls autoplay muted style="z-index: 400;width:500px;height:450px;margin-right:5px;">
+                <source src="images/Plug-and-Play.mp4"  type="video/mp4" />
+
+            </video>
+
+            <video controls autoplay muted style="z-index: 400;width:500px;height:450px;">
+                <source src="images/Plug-and-Play.mp4"  type="video/mp4" />
+
+            </video>
+        </div>
+
+</div>
+
+<footer style="margin-bottom: 0;">
+    <nav class="container-fluid navbar-fixed-bottom">
+        <div class="nav col-lg-4 col-md-4 col-xs-12 "  >
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="https://www.facebook.com/vinaYcanstayconnectedforeverwithUat" target="_blank" style="display: inline;text-decoration: none;width:0;height:0; margin:0;padding: 0">
+                        <img src="images/facebook.jpg" class="social-roll " alt="Facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://www.flickr.com/photos/greatlooks/" target="_blank" style="display: inline;text-decoration: none;width:0;height:0;margin:0;padding: 0">
+                        <img src="images/Flickr-Icon.png" class="social-roll"  alt="flicker"  /></a>
+                </li>
+                <li>
+                    <a href="Contact.html" style="display: inline;text-decoration: none;width:0;height:0;margin:0;padding: 0">
+                        <img src="images/contact_png.PNG" class="social-roll"  alt="contact" /></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script src="jquery-1.12.0.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+<script src="jquery.cycle.all.js"></script>
+<script src="jquery.cycle2.min.js"></script>
+<script src="jquery.cycle2.tile.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 200) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
+        //Click event to scroll to top
+        $('.scrollToTop').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
+
+    });
+
+    $(document).ready(function(){
+        $("div .navbar-header img").animate({
+            opacity:'1',
+            width:'350px',
+            heigth:'130px'
+
+        },2000);
+        $(".header").animate({
+            left: '100px'
+
+        },2000);
+
+    });
+</script>
+
+<!--<script type="text/javascript">-->
+    <!--$("ul li img").hover(function(){-->
+        <!--$("ul li img").hide();-->
+    <!--})-->
+
+<!--</script>-->
+
+
+</body>
+</html>

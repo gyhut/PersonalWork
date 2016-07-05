@@ -1,0 +1,962 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    height:auto;
+    width:auto;
+}
+#home-video
+{
+    background-size: cover;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.videos {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+    .video-bg {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-bg {
+        width: 300%;
+        left: -100%;
+    }
+}
+/*@media (max-width: 767px) {*/
+    /*.videos {*/
+        /*background: url('images/Plug-and-Play.jpg') center center / cover no-repeat;*/
+    /*}*/
+
+    /*.video-bg {*/
+        /*display: none;*/
+    /*}*/
+
+/*}*/
+/*.videos {*/
+/*background-size: cover;*/
+/*padding: 0;*/
+/*position: absolute;*/
+/*min-width: 100%;*/
+/*min-height: 100%;*/
+/*top:50%;*/
+/*left:50%;*/
+/*width: auto;*/
+/*height: auto;*/
+/*z-index: -100;*/
+/*-ms-transform: translateX(-50%) translateY(-50%);*/
+/*-moz-transform: translateX(-50%) translateY(-50%);*/
+/*-webkit-transform: translateX(-50%) translateY(-50%);*/
+/*transform: translateX(-50%) translateY(-50%);*/
+/*}*/
+
+.home-content img:hover{
+    -webkit-filter: drop-shadow(5px 5px 8px black);
+    filter: drop-shadow(5px 5px 7px white);
+}
+.home-content p{
+    width:800px;
+    font-weight: 300;
+    font-family: PetraScriptEF-Alternate, serif;
+    font-size: 3em;
+    -webkit-filter: drop-shadow(3px 3px 5px black);
+    filter: drop-shadow(3px 3px 5px white);
+}
+body{
+    width:100%;
+    height:100%;
+    overflow-y: hidden;
+}
+
+.header{
+    width:350px;
+    height:60px;
+
+    border-radius: 5px;
+    position: relative;
+    -webkit-animation: mymove 5s 1 ; /* Chrome, Safari, Opera */
+    animation: mymove 5s 1;
+    padding: 0;
+}
+
+/*.header h2*/
+/*{*/
+/*font-family:PetraScriptEF-Alternate;*/
+/*font-size: 4em;*/
+/*font-style: italic;*/
+/*font-weight: bold;*/
+/*color: white;*/
+
+/*}*/
+@-webkit-keyframes  mymove {
+    from {left: 0;}
+    to {left: 100px;}
+}
+
+@keyframes mymove {
+    from {left: 0;}
+    to {left: 100px;}
+
+}
+@font-face {
+    font-family:PetraScriptEF-Alternate;
+    src:url("Bootstrap/fonts/PetraScriptEF-Alternate.eot?") format("eot"),
+    url("Bootstrap/fonts/PetraScriptEF-Alternate.woff") format("woff"),
+    url("Bootstrap/fonts/PetraScriptEF-Alternate.ttf") format("truetype"),
+    url("Bootstrap/fonts/PetraScriptEF-Alternate.svg#PetraScriptEF-Alternate")
+    format("svg");font-weight:normal;font-style:normal;
+}
+.parallax-bg {
+    padding: 10px 80px;
+    background: url(images/nature9.jpg) no-repeat  fixed ;
+    background-size: cover;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition:all 0.2s ease ;
+    transition: all 0.2s ease;
+
+}
+.img-box {
+    width:340px;
+    height:60px;
+    border-color: #1b6d85;
+    background-color: white;
+    margin-top:20px;
+    margin-left: 200px;
+}
+
+.img-box img{
+    width: 350px;
+    height:150px;
+}
+
+.mask h2 {
+    font: italic bold 1.5em PetraScriptEF-Alternate;
+
+    /*font-family: PetraScriptEF-Alternate;*/
+    /*font-size: 1.5em;*/
+    /*font-style: italic;*/
+    /*font-weight: bold*/
+}
+
+nav ul li a {
+    font-family: Calibri,serif;
+    font-size: 1.5em;
+    font-style: italic;
+    /*font-weight: bold;*/
+
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    animation-duration:2s;
+}
+
+#wrapper{
+    width:100%;
+    height:100%;
+    background: url("images/nature9.jpg") no-repeat fixed center  ;
+    background-size: cover;
+}
+#home-wrapper{
+    width:100%;
+    height:100%;
+}
+#Mlogo {
+    width:500px;
+    height:200px;
+}
+
+.cycle-pager {
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
+}
+.cycle-pager span {
+    font-family: arial, serif; font-size: 50px; width: 16px; height: 16px;
+    display: inline-block; color: #ddd; cursor: pointer;
+}
+.cycle-pager span.cycle-pager-active { color: #D69746;}
+.cycle-pager > * { cursor: pointer;}
+
+/*.fade-in.one {*/
+/*-webkit-animation-delay: 0.7s;*/
+/*-moz-animation-delay: 0.7s;*/
+/*animation-delay: 0.7s;*/
+/*}*/
+
+.view {
+    height: 249px;
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /*box-shadow: 1px 1px 2px #e6e6e6;*/
+    cursor: default;
+    /*background: #fff url(images/image1.jpg) no-repeat center center;*/
+}
+
+.view .mask {
+    width: 350px;
+    height: 249px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.view h2 {
+    /*text-transform: uppercase;*/
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    padding: 10px;
+    margin: 50px 0 0 0;
+    font-style: italic;
+
+}
+
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #f9f9f9;
+    color: black;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.view-first img {
+    transition: all 0.2s linear;
+}
+
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(10, 120, 135, 0.4);
+    transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {
+    transform: translateY(-120px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first a.info {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img {
+    transform: scale(1.5);
+    border-radius: 5px;
+}
+
+.view-first:hover .mask {
+    opacity: 1;
+}
+
+.view-first:hover h2,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+
+
+.menu--tantalid .menu__link {
+    color:dodgerblue;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+}
+
+.menu--tantalid .menu__link:hover {
+    color:#122b40;
+}
+
+.menu--tantalid .menu__item--current .menu__link {
+    color: white;
+    overflow: visible;
+}
+
+.menu--tantalid .menu__link::before,
+.menu--tantalid .menu__link::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    border: 2px solid white;
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.3s, width 0.4s;
+    transition: transform .4s, opacity 0.3s, width .4s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.menu--tantalid .menu__link::before {
+    top: 0;
+    left: 0;
+    border-width: 2px 0 0 2px;
+    -webkit-transform: translate3d(-150%, 70%, 0) rotate(-30deg);
+    transform: translate3d(-150%, 70%, 0) rotate(-30deg);
+}
+
+.menu--tantalid .menu__link::after {
+    right: 0;
+    bottom: 0;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: translate3d(150%, -70%, 0) rotate(-30deg);
+    transform: translate3d(150%, -70%, 0) rotate(-30deg);
+}
+
+.menu--tantalid .menu__item--current .menu__link::before,
+.menu--tantalid .menu__item--current .menu__link::after {
+    width: 50%;
+    height: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    transform: translate3d(0, 0, 0) rotate(0deg);
+}
+html { overflow-y: scroll; }
+
+.clear {
+    clear: both;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+/*#background {*/
+/*background: url(images/background.png) repeat 5% 5%;*/
+/*position: fixed;*/
+/*top: 0; left: 0; right: 0; bottom: 0;*/
+/*z-index: 100;*/
+/*}*/
+
+/*#midground {*/
+/*background: url(images/midground.png) repeat 20% 20%;*/
+/*position: fixed;*/
+/*top: 0; left: 0; right: 0; bottom: 0;*/
+/*z-index: 100;*/
+/*}*/
+
+/*#foreground {*/
+/*background: url(images/foreground.png) repeat 90% 110%;*/
+/*position: fixed;*/
+/*top: 0; left: 0; right: 0; bottom: 0;*/
+/*z-index: 200;*/
+/*}*/
+.social-roll {
+    height: 45px;
+    width: 44px;
+    margin: 10px;
+    float: left;
+    border-radius: 50%;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    z-index: 500;
+}
+.social-roll:hover {
+    background-color: #c7ddef;
+    height: 45px;
+    width: 44px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 1px rgba(0,0,0,0.8);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+    z-index: 500;
+
+}
+.scrollToTop{
+    position:fixed;
+    top:50px;
+    right:20px;
+    display:none;
+    z-index: 800;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+.transimage{
+    -ms-transform: rotate(13deg); /* IE 9 */
+    -webkit-transform: rotate(13deg); /* Chrome, Safari, Opera */
+    transform: rotate(13deg);
+
+}
+/*------------------------------------Wedding heading starts here------------------------------*/
+
+.ww {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.we {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    text-transform: uppercase;
+}
+
+.wd {
+    border-color: #1b6d85;
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+.wd {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.8s;
+    -moz-animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+}
+
+.wi {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+.wn {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.4s;
+    -moz-animation-delay: 2.4s;
+    -webkit-animation-delay: 2.4s;
+}
+
+.wg {
+    font-family: PetraScriptEF-Alternate, serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+
+/*-----------------------Wedding heading here-------------------------------*/
+/*------------------------Fashion heading starts----------------------------*/
+
+
+.ff {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.fa {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    text-transform: uppercase;
+}
+
+.fs {
+    border-color: #1b6d85;
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+.fh {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.8s;
+    -moz-animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+}
+
+.fi {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+.fo {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.4s;
+    -moz-animation-delay: 2.4s;
+    -webkit-animation-delay: 2.4s;
+}
+
+.fn {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+
+
+/*------------------------Fashion heading----------------------------*/
+
+/*------------------------Portraits heading----------------------------*/
+
+
+.pp {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.po {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    text-transform: uppercase;
+}
+
+.pr {
+    border-color: #1b6d85;
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+.pt {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.8s;
+    -moz-animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+}
+
+.pr {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+.pa {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.4s;
+    -moz-animation-delay: 2.4s;
+    -webkit-animation-delay: 2.4s;
+}
+
+.pi {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+.pt {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+    -webkit-animation-delay: 2.7s;
+}
+.ps {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.9s;
+    -moz-animation-delay: 2.9s;
+    -webkit-animation-delay: 2.9s;
+}
+
+/*------------------------------------------Portraits ends here-------------------------*/
+/*------------------------nature heading starts here------------------------------------*/
+
+.nn {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.na {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+
+
+.nt {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+}
+
+.nu {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -webkit-animation-delay: 1.6s;
+}
+.nr {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.9s;
+    -moz-animation-delay: 1.9s;
+    -webkit-animation-delay: 1.9s;
+}
+.ne {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+/*---------------------------------------Nature heading ends here------------------------*/
+
+/*---------------------------------Culture heading starts here----------------------------*/
+
+.cc {
+    border-color: #1b6d85;
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+.cu {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 1.8s;
+    -moz-animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+}
+
+
+.cl {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.4s;
+    -moz-animation-delay: 2.4s;
+    -webkit-animation-delay: 2.4s;
+}
+
+.ct {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+.cu {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+    -webkit-animation-delay: 2.7s;
+}
+.cr {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.9s;
+    -moz-animation-delay: 2.9s;
+    -webkit-animation-delay: 2.9s;
+}
+.ce {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 3em;
+    animation-delay: 2.9s;
+    -moz-animation-delay: 2.9s;
+    -webkit-animation-delay: 2.9s;
+}
+
+/*--------------------------------culture  heading ends here-----------------------------*/
+/*--------------------------------Contact  heading Starts here-----------------------------*/
+.cc {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+.co {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+}
+.cn {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+.ct {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+.ca {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+}
+.cc {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+}
+
+.ct {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
+}
+
+.cu {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    -webkit-animation-delay: 1.6s;
+}
+
+.cs {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 1.9s;
+    -moz-animation-delay: 1.9s;
+    -webkit-animation-delay: 1.9s;
+}
+/*--------------------------------Contact  heading ends here-----------------------------*/
+
+.vv {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+.vi {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+}
+.vd {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+.ve {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+.vo {
+    font-family: PetraScriptEF-Alternate ,serif;
+    color: cyan;
+    font-weight: bold;
+    font-size: 2.5em;
+    animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+}
